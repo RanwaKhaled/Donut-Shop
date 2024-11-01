@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complaints</title>
+        <link rel="stylesheet" href="complaint.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div name="back" class="tooltip">
+            <a href="index.html">
+                <img src="assets/back.png" width="50">
+            </a>
+            <span class="tooltiptext">Back to Homepage</span>
+        </div>
+        <div name="complaint-form">
+            <center>
+            <h1>Complaints Form</h1>
+            </center>
+            <form action="">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" name="name">
+                <br>
+                <br>
+                <label for="mail">Email:</label>
+                <br>
+                <input type="email" name="mail">
+                <br>
+                <br>
+                <label for="dropdown">Gender:</label>
+                <br>
+                <select name="dropdown">
+                    <option value="none" selected disabled hidden>Select an Option</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <br>
+                <label for="content">Complaint:</label>
+                <br>
+                <textarea name="content" rows="5" cols="50">
+                </textarea>
+                <br>
+                <br>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

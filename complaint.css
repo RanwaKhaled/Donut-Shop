@@ -1,0 +1,109 @@
+/* background color: #ffc4da*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffc4da;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    background-image: url("assets/donut\ bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+div[name="complaint-form"]{
+    background-color: rgba(255, 153, 211, 0.7);
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+    color: #470202;
+    font-weight: 550;
+}
+
+h1{
+    font-family: "Irish Grover";
+    color: #c90073;
+    font-weight: 500;
+}
+
+div[name="complaint-form"] input[name="submit"]{
+    font-family: "Irish Grover";
+    color:#c90073;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10%;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.2), /* Left shadow */
+                3px 0px 5px rgba(0, 0, 0, 0.2);  /* Right shadow */
+    border: none;
+    background-color: #ffc4da;
+    height: 50px;
+    float: right;
+}
+
+input[name="name"], input[name="mail"], select[name="dropdown"], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: none;
+}
+
+div[name="back"]{
+    position:absolute;
+    top: 1%; /*[wherever you want it]*/
+    left:1%; /*[wherever you want it]*/
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+} 
+
+.tooltiptext {
+    visibility: hidden;  /* Hides the tooltip initially */
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;  /* Positions the tooltip absolutely within the parent */
+    z-index: 1;  /* Ensures the tooltip appears above other elements */
+    top: 125%;  /* Positions the tooltip 125% above the reference element */
+    left: 50%;  /* Centers the tooltip horizontally relative to the reference */
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+
+
